@@ -4,17 +4,18 @@
 	import Logo from "./Logo.svelte";
 	import MyAnims from "./MyAnims.svelte";
 	import {
-	blur,
-	crossfade,
-	draw,
-	fade,
-	fly,
-	scale,
-	slide
-} from 'svelte/transition';
+		blur,
+		crossfade,
+		draw,
+		fade,
+		fly,
+		scale,
+		slide
+	} from 'svelte/transition';
+	import McApi from "./MCApi.svelte";
 
-	
 	let menu_value = 1;
+
 
 
 </script>
@@ -34,9 +35,11 @@
 		{/if}
 
 		{#if menu_value == 2}
-			<div class="construction"><span class=""><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
+			
+			<div class="construction" in:fly={{ y: 200, duration: 2000 }} out:fade><span class=""><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
 				<section class="card w-full">
-					<div class="p-4 space-y-4">
+					<div class="p-4 space-y-4" >
+						<McApi />
 						<div class="placeholder" />
 						<div class="grid grid-cols-3 gap-8">
 							<div class="placeholder" />
@@ -58,7 +61,6 @@
 	
 </body>
 <Bottom />
-
 <style>
 
 

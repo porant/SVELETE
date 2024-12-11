@@ -1,4 +1,13 @@
 <script lang="ts">
+    import {
+		blur,
+		crossfade,
+		draw,
+		fade,
+		fly,
+		scale,
+		slide
+	} from 'svelte/transition';
 
     class Anim {
         name = "";
@@ -38,7 +47,7 @@
     ]
 
 </script>
-<section class="card_menu">
+<section class="card_menu" in:fly={{ y: 200, duration: 2000 }} out:fade>
     {#each ANIMS as anim}
         <div class="block card card-hover p-4">
             <header class="card-header">
