@@ -10,15 +10,15 @@
 <div class="construction" in:fly={{ y: 200, duration: 2000 }} out:fade><span class=""><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
     <section class="card w-full">
         <div class="p-4 space-y-4" >
-            Minecraft server:
+            <div>Minecraft server:</div>
             <McApi />
         </div>
         <div class="p-4 space-y-4" >
-            File cloud:
-            <MyFileCloud />
+            <div>File storage</div>
+            <MyFileCloud /> 
         </div>
     </section>
-    <span class=""><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
+    <span><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
 </div>
 
 <style>

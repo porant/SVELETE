@@ -44,12 +44,12 @@
 
 
 {#if mc_status === "success"}
-        <a class="chip variant-filled" href="https://file.porant.de/s/rGq2xF5EadkcQcK">
+        <a class="chip variant-ghost-primary" href="https://file.porant.de/s/rGq2xF5EadkcQcK">
             <i class="fa-solid fa-cube" /> _FORGE v{mc_version} porant.de {mc_players_now}/{mc_players_max}
             <span class="chip"><i class="fa-solid fa-download" /></span>
         </a>
 {:else}
-        <a class="chip variant-filled placeholder" href="https://file.porant.de/s/rGq2xF5EadkcQcK">
+        <a class="chip variant-ghost-primary placeholder" href="https://file.porant.de/s/rGq2xF5EadkcQcK">
             Loading...
             <span class="chip"><i class="fa-solid fa-download" /></span>
         </a>

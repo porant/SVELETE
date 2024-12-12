@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { RadioGroup, RadioItem } from "@skeletonlabs/skeleton";
-	import { writable } from "svelte/store";
 
     export let value:number;
 
@@ -8,8 +7,7 @@
 
 <header>
     <RadioGroup active="variant-filled-primary" hover="hover:variant-soft-primary">
-        <RadioItem bind:group={value} name="justify" value={0}>ANIM</RadioItem>
-	    <RadioItem bind:group={value} name="justify" value={1}>HOME</RadioItem>
+        <RadioItem bind:group={value} name="justify" value={1}>ANIM</RadioItem>
 	    <RadioItem bind:group={value} name="justify" value={2}>APPS</RadioItem>    
     </RadioGroup>
 </header>

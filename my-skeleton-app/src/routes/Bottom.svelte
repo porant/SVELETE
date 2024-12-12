@@ -3,8 +3,8 @@
 </head>
 
 <footer>
-    <div>
-
+    <div class="pre">
+        <span >Contacts:</span>
         <a href="https://discord.gg/e6wkfyBDGV" class="chip variant-filled-surface hover:variant-filled" data-sveltekit-preload-data="hover">
             <i class="fa-brands fa-discord"></i>
             <span>DISCORD</span>
