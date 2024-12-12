@@ -46,6 +46,8 @@
   "dependencies": {
     "@floating-ui/dom": "1.6.12",
     "@fortawesome/fontawesome-free": "^6.7.1",
+    "docker": "^1.0.0",
+    "docker-compose": "^1.1.0",
     "highlight.js": "11.10.0"
   }
 }
