@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import '../app.postcss';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
