@@ -1,7 +1,7 @@
 <script lang="ts" >
     import { onMount } from "svelte";
 
-    let api_url = "https://mcapi.us/server/status?ip=porant.de"
+    let api_url = "https://mcapi.us/server/status?ip=porant.de:25565"
 
  
 
