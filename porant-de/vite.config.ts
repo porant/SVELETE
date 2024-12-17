@@ -10,9 +10,7 @@ export default defineConfig({
 	define: {
 		// Pass environment variables to the client if needed
 		'process.env': {
-		  RCON_PASSWORD: process.env.RCON_PASSWORD,
-		  RCON_HOST: process.env.RCON_HOST,
-		  RCON_PORT: process.env.RCON_PORT,
+			VITE_COOLIFY_API_TOKEN: process.env.VITE_COOLIFY_API_TOKEN,
 		},
 	},
 });
