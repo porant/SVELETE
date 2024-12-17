@@ -1,6 +1,6 @@
 
     const url = "https://coolify.porant.de/api/v1/resources";
-    const TOKEN = import.meta.env.VITE_COOLIFY_API_TOKEN;
+    const TOKEN = "1|JC1PmgnnmEU8ivbk0OVGn62pBGrYrYVXfL2XELlI9608603c";
 
     export async function callAPI() {
         try {
