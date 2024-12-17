@@ -72,7 +72,7 @@
     }
     
     .placeh{
-        inline-size: 350px;
+        inline-size: 100px;
     }
 
 
