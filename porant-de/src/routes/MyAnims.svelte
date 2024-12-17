@@ -85,8 +85,6 @@
     .card_menu {
         display: grid;
         padding: 10px;
-        margin-top: 100px;
-
     }
     .card {
         margin: 5px;

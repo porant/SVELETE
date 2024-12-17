@@ -1,25 +1,19 @@
 <script lang="ts">
-	import { RadioGroup, RadioItem } from "@skeletonlabs/skeleton";
-
-    export let value = 2;
-
+    import MyApps from "./MyApps.svelte";
 </script>
 
 <header>
-    <RadioGroup active="variant-filled-primary" hover="hover:variant-soft-primary">
-        <RadioItem bind:group={value} name="justify" value={1}>ANIM</RadioItem>
-	    <RadioItem bind:group={value} name="justify" value={2}>APPS</RadioItem>    
-    </RadioGroup>
+    <MyApps />
 </header>
 
 
 <style>
     header {
         z-index: 7;
-        position: fixed;
+        position: absolute;
         display: flex;
         justify-content: center;
-        top: 30px;
+        top: 10px;
         width: 100%;
         padding: 10px;
     }

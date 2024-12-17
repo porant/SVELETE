@@ -1,33 +1,81 @@
-<script>
+<script lang="ts">
 	import { fade, fly } from "svelte/transition";
-    import McApi from "./MCApi.svelte";
-	import MyFileCloud from "./myFileCloud.svelte";
+	import { onMount, onDestroy } from "svelte";
+    import * as COOLIFY from "./COOLIFY.js";
+	import { ProgressBar } from "@skeletonlabs/skeleton";
+
+
+    let APPS: any[] = []
+
+
+    let intervalId: NodeJS.Timeout;
+    onMount(async () => {
+        APPS = await COOLIFY.getAPPS()
+        intervalId = setInterval(async () => {
+            APPS = await COOLIFY.getAPPS()
+        }, 10000);
+    });
+
+    onDestroy(() => {
+        clearInterval(intervalId);
+    });
+    
+
 </script>
 
+<div class="middle" in:fly={{ y: 200, duration: 2000 }} out:fade>
+            {#if APPS.length == 0}
+                <div class="placeh">
+                    <ProgressBar />
+                </div>
+            {/if}
+                
+            {#each APPS as app}
 
-<div class="construction" in:fly={{ y: 200, duration: 2000 }} out:fade><span class=""><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
-    <section class="card w-full">
-        <div class="p-4 space-y-4" >
-            <div>Minecraft server:</div>
-            <McApi />
-        </div>
-        <div class="p-4 space-y-4" >
-            <div>File storage</div>
-            <MyFileCloud /> 
-        </div>
-    </section>
-    <span><i class="fa-solid fa-skull" /> UNDER CONSTRUCTION <i class="fa-solid fa-skull" /></span>
+                    <div class="app">
+                        
+
+                            {#if app.status == "running:healthy"}
+                                <span class="badge variant-ghost-success">{app.name}</span>
+                            {:else if app.status == "exited:unhealthy"}
+                                <span class="badge variant-ghost-error">{app.name}</span>
+                            {:else if app.status == "running:unhealthy"}
+                                <span class="badge variant-ghost-warning">{app.name}</span>
+                            {/if}
+                            
+                        
+                    </div>
+
+            {/each}
+            
+            
+            
+
+
+
 </div>
 
+
 <style>
-    	.construction{
-		color: rgb(238, 255, 0);
-		background-color: rgb(71, 12, 12);
-		
-		display: grid;
-		position: absolute;
-		top: 200px;
-		width: 100%;
-		text-align: center;
-	}
+
+    .middle{        
+        display: flex;
+        padding: 5px;
+        margin: 5px;
+        size: 100%;
+
+    }
+
+    .app {
+        display: flex;
+        margin: 3px;
+    }
+    
+    .placeh{
+        inline-size: 350px;
+    }
+
+
+
+
 </style>
