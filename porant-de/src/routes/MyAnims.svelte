@@ -18,23 +18,22 @@
         }
     }
 
-
     const ANIMS = [
         {
             name:"Мастер Игорей",
-            animation:"https://file.porant.de/public.php/dav/files/myjobs/MI%20BG%20v40001-0780.mp4",
+            animation:"porant-de/src/ANIMS/MI BG.mp4",
             text:"",
             link:""
         },
         {
             name:"BLACK CAT",
-            animation:"https://file.porant.de/public.php/dav/files/myjobs/BlackCat_Val_White.mp4",
+            animation:"porant-de/src/ANIMS/BlackCat.mp4",
             text:"",
             link:""
         },
         {
             name:"Мастер Игорей",
-            animation:"https://file.porant.de/public.php/dav/files/myjobs/STINGER%20text%20v4%200001-0220.mp4",
+            animation:"porant-de/src/ANIMS/STINGER.mp4",
             text:"",
             link:""
         }
