@@ -21,7 +21,7 @@
     const ANIMS = [
         {
             name:"Мастер Игорей",
-            animation:"porant-de/src/ANIMS/MI BG.mp4",
+            animation:"../ANIMS/MI BG.mp4",
             text:"",
             link:""
         },
