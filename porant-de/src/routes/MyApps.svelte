@@ -47,13 +47,8 @@
                     </div>
 
             {/each}
-            
-            
-            
-
-
-
 </div>
+
 
 
 <style>
