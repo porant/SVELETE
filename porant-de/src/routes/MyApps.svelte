@@ -24,11 +24,6 @@
 </script>
 
 <div class="middle" in:fly={{ y: 200, duration: 2000 }} out:fade>
-            {#if APPS.length == 0}
-                <div class="placeh">
-                    <ProgressBar />
-                </div>
-            {/if}
                 
             {#each APPS as app}
 
