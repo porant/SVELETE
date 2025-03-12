@@ -60,10 +60,6 @@
         display: flex;
         margin: 3px;
     }
-    
-    .placeh{
-        inline-size: 100px;
-    }
 
 
 

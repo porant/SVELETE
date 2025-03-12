@@ -21,19 +21,19 @@
     const ANIMS = [
         {
             name:"Мастер Игорей",
-            animation:"src/routes/ANIMS/MI BG.mp4",
+            animation:"ANIMS/MI BG.mp4",
             text:"",
             link:""
         },
         {
             name:"BLACK CAT",
-            animation:"src/routes/ANIMS/BlackCat.mp4",
+            animation:"ANIMS/BlackCat.mp4",
             text:"",
             link:""
         },
         {
             name:"Мастер Игорей",
-            animation:"src/routes/ANIMS/STINGER.mp4",
+            animation:"ANIMS/STINGER.mp4",
             text:"",
             link:""
         }
